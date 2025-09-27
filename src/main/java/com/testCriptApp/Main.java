@@ -109,7 +109,7 @@ public class Main {
             // если сумма превысила k → уменьшаем окно слева
             while (sum > k && left < right) {
                 sum -= arr[left];
-                left++;
+                left--;
             }
         }
         System.out.println("Нет подмассива с суммой " + k);
