@@ -111,13 +111,6 @@ public class Main {
                 sum -= arr[left];
                 left++;
             }
-
-            // проверка: нашли ли сумму k
-            if (sum == k) {
-                System.out.println("Подмассив найден: " +
-                        Arrays.toString(Arrays.copyOfRange(arr, left, right + 1)));
-                return;
-            }
         }
         System.out.println("Нет подмассива с суммой " + k);
     }
